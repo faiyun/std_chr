@@ -3,7 +3,9 @@ import img2text as i2t
 import websocket
 import ssl
 import time
-
+import cv2
+import sys
+  
 # 测试时候在此处正确填写相关信息即可运行
 
 APPID='8d8e7214'
@@ -20,7 +22,7 @@ TEXT = "没有看到文字"
 if __name__ == "__main__":
 
     try:
-        TEXT = i2t.img2text("imgrec_20240510142649.png").run()
+        TEXT = i2t.img2text("11.png").run()
     except Exception as e:
             print("读取文字失败", e)
 
